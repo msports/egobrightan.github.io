@@ -1,11 +1,13 @@
 # Site settings
-title: M SPORT
+title: M SPORTS
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "http://guide.mmsportservice.com" # the subpath of your site, e.g. /blog/
+  ျမန္မာနိုင္ငံမွ အားကစားနွင့္ ေဘာလုံးဝါသနာရွင္မ်ားအတြက္ 
+  M Sports "Myanmar Sports" မွ ျမန္မာေၾကးျဖင့္ ေဆာ့ကစား 
+  နုိင္သည့္ ဆုိဒ္မ်ားအား ဝန္ေဆာင္မႈ ရယူႏုိင္ပါျပီ။ Agents and    
+  Members မ်ားအတြက္ ေငြေၾကးယုံၾကည္ စိတ္ခ်ရမႈအျပင္  ေစ်းနႈန္းအားျဖင့္ လူတိုင္းလက္လွမ္းမွီႏိုင္သည့္ အေကာင္းဆုံ ဝန္ေဆာင္မႈ ျဖစ္ပါသည္။
+  
+baseurl: "http://mmsportservice.com" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  egobrightan
@@ -20,11 +22,11 @@ more_vert:
     name: Facebook
     link: www.facebook.com/myanmarsport
   option2:
-    name: Cool Option 2
-    link: www.myawesomelink.com
+    name: Viber
+    link: #
   option3:
-    name: Cool Option 3
-    link: www.myawesomelink.com
+    name: Order
+    link: #
 
 # Build settings
 markdown: kramdown
