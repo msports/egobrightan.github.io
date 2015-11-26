@@ -1,16 +1,16 @@
 # Site settings
-title: M SPORTS
-email: your-email@domain.com
+title: M SPORT
+email: msport@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   ျမန္မာနိုင္ငံမွ အားကစားနွင့္ ေဘာလုံးဝါသနာရွင္မ်ားအတြက္ 
-  M Sports "Myanmar Sports" မွ ျမန္မာေၾကးျဖင့္ ေဆာ့ကစား 
+  M Sports "Myanmar Sport" မွ ျမန္မာေၾကးျဖင့္ ေဆာ့ကစား 
   နုိင္သည့္ ဆုိဒ္မ်ားအား ဝန္ေဆာင္မႈ ရယူႏုိင္ပါျပီ။ Agents and    
   Members မ်ားအတြက္ ေငြေၾကးယုံၾကည္ စိတ္ခ်ရမႈအျပင္  ေစ်းနႈန္းအားျဖင့္ လူတိုင္းလက္လွမ္းမွီႏိုင္သည့္ အေကာင္းဆုံ ဝန္ေဆာင္မႈ ျဖစ္ပါသည္။
   
 baseurl: "http://mmsportservice.com" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  egobrightan
+facebook_username: myanmarsport
+github_username:  msports
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
@@ -20,7 +20,7 @@ pagination_type: default  # values [ ops, default ]
 more_vert:
   option1:
     name: Facebook
-    link: www.facebook.com/myanmarsport
+    link: #
   option2:
     name: Viber
     link: #
