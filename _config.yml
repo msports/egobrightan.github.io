@@ -18,7 +18,7 @@ post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
 more_vert:
-  option1:
+  option1:http://fb.me/myanmarsport
     name: Facebook
     link: #
   option2:
