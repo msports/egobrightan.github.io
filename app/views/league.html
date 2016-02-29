@@ -1,0 +1,38 @@
+
+<div class="row past-games">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>{{table.leagueCaption}}</strong></div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Lag</th>
+                        <th>S</th>
+                        <th>W</th>
+                        <th>O</th>
+                        <th>F</th>
+                        <th>GM</th>
+                        <th>IM</th>
+                        <th>MS</th>
+                        <th>P</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hoverPointer" ng-click="viewTeam(team)" ng-repeat="team in table.standing | orderObjectBy:'position'">
+                        <td>{{ team.position }} </td>
+                        <td>{{ team.teamName }}</td>
+                        <td>{{ team.playedGames }}</td>
+                        <td>{{ team.wins }}</td>
+                        <td>{{ team.draws }}</td>
+                        <td>{{ team.losses }}</td>
+                        <td>{{ team.goals }}</td>
+                        <td>{{ team.goalsAgainst }}</td>
+                        <td>{{ team.goalDifference }}</td>
+                        <td>{{ team.points }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-xs-6">
+		<h1>
+			{{teamInformation.name}}
+			<i ng-if="isFavourite" class="glyphicon glyphicon-heart hoverPointer favo-hearth" ng-click="addToFavourites(teamInformation.name, url)" aria-hidden="true"></i>
+			<i ng-if="!isFavourite" class="glyphicon glyphicon-heart hoverPointer" ng-click="addToFavourites(teamInformation.name, url)" aria-hidden="true"></i>
+		</h1>
+	</div>
+	<div class="col-xs-6">
+		<img class="team-image" src="{{teamInformation.crestUrl}}" alt="" />
+	</div>
+	<div class="col-xs-6 pull-right">
+		<img class="pull-right img-responsive" style="height: 100px;" ng-if="team === 'SD Eibar'" ng-src="http://upload.wikimedia.org/wikipedia/en/thumb/7/75/SD_Eibar_logo.svg/187px-SD_Eibar_logo.svg.png"/>
+	</div>
+
+	<div class="col-xs-12">
+		<h3>Kommande matcher</h3>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th class="col-xs-2">Datum</th>
+					<th class="col-xs-3">Hemmalag</th>
+					<th class="col-xs-3">Bortalag</th>
+					<th class="col-xs-1">Tid</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="hoverPointer" ng-click="matchInfo(game)" ng-repeat="game in games | futureDates |orderBy:'date':false">
+					<td>{{game.date | date:'d MMMM yyyy' }} </td>
+					<td ng-class="{'text-primary': game.homeTeamName === teamInformation.name}">{{game.homeTeamName}}</td>
+					<td ng-class="{'text-primary': game.awayTeamName === teamInformation.name}">{{game.awayTeamName}}</td>
+					<td>{{game.date | date:'HH:mm'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1> {{match.fixture.date | date:'HH:mm'}} {{match.fixture.homeTeamName}} vs {{match.fixture.awayTeamName}}</h1>
+    </div>
+    <div class="col-md-6">
+        <h4><a href="" ng-click="teamInfo(match.fixture, true)">{{match.fixture.homeTeamName}}</a></h4>
+    </div>
+    <div class="col-md-6">
+        <h4 class="text-right"><a href="" ng-click="teamInfo(match.fixture)">{{match.fixture.awayTeamName}}</a></h4>
+    </div>
+</div>
+<div class="row past-games">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>Tidigare möten</strong></div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr ng-repeat="game in match.head2head.fixtures | orderBy:'game.date':false">
+                        <td>{{game.date | date:'dd/MM yyyy' }} </td>
+                        <td>{{game.homeTeamName}}</td>
+                        <td>{{game.awayTeamName}}</td>
+                        <td>{{game.result.goalsHomeTeam}} - {{ game.result.goalsAwayTeam }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
