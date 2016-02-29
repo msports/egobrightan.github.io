@@ -1,0 +1,20 @@
+<table class="table table-hover">
+    <thead ng-if="allDays[0] === day">
+        <tr class="text-center">
+            <th ng-if="includeDate" class="col-xs-2">Datum</th>
+            <th class="col-xs-1">Tid</th>
+            <th class="col-xs-3">Hemmalag</th>
+            <th class="col-xs-3">Bortalag</th>
+            <th class="col-xs-3">Liga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="hoverPointer" ng-click="action(game.game)" ng-repeat="game in games | orderBy:'game.date':false">
+            <td ng-if="includeDate">{{game.game.date | date:'dd/MM yyyy' }} </td>
+            <td>{{game.game.date | date:'HH:mm'}}</td>
+            <td>{{game.game.homeTeamName}}</td>
+            <td>{{game.game.awayTeamName}}</td>
+            <td>{{game.league}}</td>
+        </tr>
+    </tbody>
+</table>
