@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   နုိင္သည့္ ဆုိဒ္မ်ားအား ဝန္ေဆာင္မႈ ရယူႏုိင္ပါျပီ။ Agents and    
   Members မ်ားအတြက္ ေငြေၾကးယုံၾကည္ စိတ္ခ်ရမႈအျပင္  ေစ်းနႈန္းအားျဖင့္ လူတိုင္းလက္လွမ္းမွီႏိုင္သည့္ အေကာင္းဆုံ ဝန္ေဆာင္မႈ ျဖစ္ပါသည္။
   
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "https://msports.github.io/" # the subpath of your site, e.g. /blog/
 url: "https://msports.github.io/" # the base hostname & protocol for your site
 facebook_username: myanmarsport
 github_username:  msports
